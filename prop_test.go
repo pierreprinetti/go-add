@@ -19,7 +19,7 @@ func TestAdd(t *testing.T) {
 		}
 	}
 
-	tests := []struct {
+	tests := [...]struct {
 		name   string
 		a      int
 		b      int
@@ -50,7 +50,7 @@ func TestAdd(t *testing.T) {
 func TestAddProperties(t *testing.T) {
 	type checkFunc func(int, int) bool
 
-	tests := []struct {
+	tests := [...]struct {
 		name     string
 		property checkFunc
 	}{
